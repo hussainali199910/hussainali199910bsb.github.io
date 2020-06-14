@@ -16,14 +16,13 @@ var loading_screen = document.getElementById('loading');
 
 var load_counter = 0;
 // Initialize images for layers
-var background = new Image();
-var clouds = new Image();
-var floaties_1 = new Image();
-var floaties_2 = new Image();
-var shadows = new Image();
-var mask = new Image();
-var humans = new Image();
-var floaties_3 = new Image();
+var background = new Image(./backsky.png);
+var clouds = new Image(./moonshad.png);
+var floaties_1 = new Image(./moon.png);
+var back = new Image(./name.png);
+var back1 = new Image(./box.png);
+var back2 = new Image(./skyshad.png);
+var back3 = new Image(./sky.png);
 // Create a tist of layer objects
 var layer_list = [
       {
@@ -51,7 +50,7 @@ var layer_list = [
          'opacity': 1
 },
       {
-         'image': background,
+         'image': back,
          'src': './name.png',
          'z_index': -1,
          'position': { x: 0, y: 0 },
@@ -59,7 +58,7 @@ var layer_list = [
          'opacity': 1
 },
       {
-         'image': background,
+         'image': back1,
          'src': './box.png',
          'z_index': 0,
          'position': { x: 0, y: 0 },
@@ -67,7 +66,7 @@ var layer_list = [
          'opacity': 1
 },
       {
-         'image': background,
+         'image': back2,
          'src': './skyshad.png',
          'z_index': 1,
          'position': { x: 0, y: 0 },
@@ -75,7 +74,7 @@ var layer_list = [
          'opacity': 1
 },
       {
-         'image': background,
+         'image': back3,
          'src': './sky.png',
          'z_index': 1.25,
          'position': { x: 0, y: 0 },
